@@ -5,6 +5,7 @@ A Grid Calculartor for desktop publishing that can be used with Indesign, Illust
 The calculator uses the desired baseline and rows numbers to generate options for numbers of textlines in rows and the avaiable margins for each option.
 
 ### Sample Output
+```
 
   SGOBIN Studio Grid Calculator
   ------------------------------
@@ -19,8 +20,11 @@ The calculator uses the desired baseline and rows numbers to generate options fo
    3 linha/row = 611.0pt e margens de 0.5pt (0.176mm) 
   ------------------------------------------------------------
 
+```
+
+
 ##todo
-~- Calculates only positive margins~
+~~- Calculates only positive margins~~
 - Add option to use inches or milimeters
 
 
