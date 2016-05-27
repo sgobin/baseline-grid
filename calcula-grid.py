@@ -1,32 +1,42 @@
-#pede numero de rows e leading desejado
-rows = int(input("Quantas rows: "))
+# Carregar os dados
+print('')
+print('')
+print('SGOBIN Studio Grid Calculator')
+print('-' * 30)
+
+rows = int(input("Número de fileiras: "))
 leading = float(input("Leading em pontos: "))
-alturaPapel = float(input('Altura do papel em pol: '))
+hPapel = float(input('Altura do papel em pol: '))
+
+# Converter unidades
 
 #Calcula tamanho do papel em pontos
 def convAltura(h):
     return h*72
 
-#Calcula tamanho total do frame baseado em linhas de texto por row
+
+
+# Calcular frame
 def calculaFrame(r,ld,f):
-    i = 1
     #Cabeçalho
     print('')
     print('Tamanho de Frame para %s rows e %spt leading' % (rows, leading))
-    print('-' * 45)
+    print('-' * 60)
 
-    #Loop com as fileiras
-    for i in range(1,12):
+    i = 1
+    while True:
         tamFrame = ((r*i)+(r-1))*ld
         margens = (f - tamFrame)/2 #calcula margens restantes
         margensMM = round(margens*0.3528, 3) #Converte as margens de pts para mm
 
-        if i < 10:
+        if tamFrame < hPapelPt:
             print(' %s linha/row = %spt e margens de %spt (%smm)' % (i, tamFrame, margens, margensMM))
+            i += 1
         else:
-            print('%s linha/row = %spt e margens de %spt (%smm)' % (i, tamFrame, margens, margensMM))
+            break
+    print('-' * 60)
     print('')
 
-folha = convAltura(alturaPapel)
-
-calculaFrame(rows,leading,folha)
+#Inicio
+hPapelPt = convAltura(hPapel)
+calculaFrame(rows,leading,hPapelPt)
