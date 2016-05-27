@@ -1,10 +1,7 @@
-#Grid Calculator
-A Grid Calculartor for desktop publishing that can be used with Indesign, Illustrator, Photoshop, etc.
+#Calculadora de Grid
+Uma calculadora em Python 3 que usa a linha de base (baseline), o números de fileiras (rows) desejados e o tamanho da página, para gerar opções de linhas de texto/fileiras e as respectivas margens.
 
-## Math
-The calculator uses the desired baseline and rows numbers to generate options for numbers of textlines in rows and the avaiable margins for each option.
-
-### Sample Output
+### Exemplo
 ```
 
   SGOBIN Studio Grid Calculator
@@ -17,14 +14,13 @@ The calculator uses the desired baseline and rows numbers to generate options fo
   ------------------------------------------------------------
    1 linha/row = 299.0pt e margens de 156.5pt (55.213mm)
    2 linha/row = 455.0pt e margens de 78.5pt (27.695mm)
-   3 linha/row = 611.0pt e margens de 0.5pt (0.176mm) 
+   3 linha/row = 611.0pt e margens de 0.5pt (0.176mm)
   ------------------------------------------------------------
 
 ```
 
 
 ##todo
-~~- Calculates only positive margins~~
-- Add option to use inches or milimeters
-
-
+~~- Calcular somente quando a margem for positiva~~
+- Adicionar opção de unidade (milímetros ou polegadas)
+- Guardar os dados em um arquivo
