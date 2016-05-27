@@ -4,23 +4,30 @@ Uma calculadora em Python 3 que usa a linha de base (baseline), o números de fi
 ### Exemplo
 ```
 
-  SGOBIN Studio Grid Calculator
-  ------------------------------
-  Número de fileiras: 12
-  Leading em pontos: 13
-  Altura do papel em pol: 8.5
+SGOBIN Studio Grid Calculator
+------------------------------
+Número de fileiras: 12
+Leading em pontos: 14
+Escolha a unidade (1 para polegadas ou 2 para milímetros): 2
+Altura do papel em milímetros: 297
 
-  Tamanho de Frame para 12 rows e 13.0pt leading
-  ------------------------------------------------------------
-   1 linha/row = 299.0pt e margens de 156.5pt (55.213mm)
-   2 linha/row = 455.0pt e margens de 78.5pt (27.695mm)
-   3 linha/row = 611.0pt e margens de 0.5pt (0.176mm)
-  ------------------------------------------------------------
+Tamanho de Frame para 12 rows e 14.0pt leading
+------------------------------------------------------------
+ 1 linha/row = 322.0pt e margens de 259.946pt (91.709mm)
+ 2 linha/row = 490.0pt e margens de 175.946pt (62.074mm)
+ 3 linha/row = 658.0pt e margens de 91.946pt (32.439mm)
+ 4 linha/row = 826.0pt e margens de 7.946pt (2.803mm)
+------------------------------------------------------------
 
 ```
 
+Usando a opção 3 para gerar as guias no Indesgin como exemplo:
+
+![Grid](http://i.imgur.com/3qR7cOg.png)
+
 
 ##todo
-~~- Calcular somente quando a margem for positiva~~
-- Adicionar opção de unidade (milímetros ou polegadas)
+- ~~Calcular somente quando a margem for positiva~~
+- ~~Adicionar opção de unidade (milímetros ou polegadas)~~
+- Tratar entrada da unidade
 - Guardar os dados em um arquivo
